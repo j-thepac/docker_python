@@ -3,7 +3,7 @@
 - Install docker
 - start docker
 
-        docker run -it --name myflask1 -p 5000:5000 -v ${PWD}:/app python:3.7 bash 
+        docker run -it --name myflask1 -p 8000:8000 -v ${PWD}:/app python:3.7 bash 
         
         # logins to docker in interactive mode
         #-p :  set port in local to docker port
