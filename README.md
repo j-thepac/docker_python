@@ -18,3 +18,6 @@
     VOLUME /data
     RUN python manage.py collectstatic
     CMD ["uwsgi", "bookmarks_uwsgi.ini"]
+
+
+### If the port is occupied , exit the docker and start again
