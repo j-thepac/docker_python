@@ -1,6 +1,6 @@
 # docker_python
 
-##Docker File Format
+## Docker File Format
 1. Take a Base Image 
 2. Configure Working Directory
 3. COPY the project
@@ -8,7 +8,7 @@
 5. Mount volume to save data
 6. Run application
 
-##Example Dockerfile
+## Example Dockerfile
 
 
     FROM python:3
