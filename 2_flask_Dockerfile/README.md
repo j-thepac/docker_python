@@ -5,7 +5,7 @@
 
         docker build -t any_name:0.1 .  
         docker images #to check the images
-        docker run -it --rm -p 5000:5000  2_flask:latest
+        docker run -it --rm -p 5000:5000  any_name:latest
     
 
 
