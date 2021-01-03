@@ -29,7 +29,7 @@
 ## Steps :
 - build image
 - mount persistant volume
-- create DB and place it in persistant vloume
+- create DB and place it in persistant volumne somewhere inside a container
 - Create SuperUser
 
 
