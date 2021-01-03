@@ -20,4 +20,4 @@
     CMD ["uwsgi", "bookmarks_uwsgi.ini"]
 
 
-### If the port is occupied , exit the docker and start again
+### If the port is occupied , exit the docker container and start again
