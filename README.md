@@ -11,13 +11,12 @@
 ## Example Dockerfile
 
 
-    FROM python:3
-    WORKDIR /app
-    COPY bookmarks .
-    RUN pip install -r requirements.txt
-    VOLUME /data
-    RUN python manage.py collectstatic
-    CMD ["uwsgi", "bookmarks_uwsgi.ini"]
+      FROM python:3.8-slim
+      WORKDIR /app
+      COPY xpfarm-dashboard .
+      RUN pip install -r requirements.txt
+      EXPOSE 8000
+      CMD ["/app/manage.py", "runserver", "0.0.0.0:8000"]
 
 
 ### If the port is occupied , exit the docker container and start again
