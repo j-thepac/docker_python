@@ -19,4 +19,8 @@
       CMD ["/app/manage.py", "runserver", "0.0.0.0:8000"]
 
 
+## If  Dockerfile in same directory use 
+
+      COPY ./ .
+
 ### If the port is occupied , exit the docker container and start again
