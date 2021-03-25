@@ -1,0 +1,18 @@
+<html>
+	<form  method="post">
+		<input type="text" name="name"><br>
+	    <input type="submit" value="Submit">
+	</form>
+	<table>
+	    <tbody>
+	    {% for student in students %}
+			<tr> <td>{{ student.name }}</td></tr>
+	    {% endfor %}
+	    </tbody>
+	</table>
+
+	{% with message=get_flashed_messages() %}
+		{% if message %}<p>{{message}}</p>{% endif %}
+	{%endwith %}
+    </body>
+</html>

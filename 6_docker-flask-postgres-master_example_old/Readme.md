@@ -1,0 +1,1 @@
+Tested app in venv using  Flask-SQLAlchemy
